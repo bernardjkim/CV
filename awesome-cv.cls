@@ -223,24 +223,21 @@
 
 \newfontfamily\sectionsubheaderfont[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{Roboto}
 
 \newfontfamily\bodyfont[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{Roboto}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
   UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
   BoldFont=*-Medium,
   BoldItalicFont=*-MediumItalic,
 ]{Roboto}
@@ -248,27 +245,24 @@
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{Roboto}
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{Roboto}
 
 \newfontfamily\bodyfontletter[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
-  BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-Bold,
+]{Roboto}
 
 
 %-------------------------------------------------------------------------------
