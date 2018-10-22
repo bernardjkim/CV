@@ -117,7 +117,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.0in, top=0.7in, right=1.0in, bottom=1.0in, footskip=.5cm}
+\geometry{left=0.7in, top=0.5in, right=0.7in, bottom=0.7in, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -186,82 +186,82 @@
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bold,
 ]{Roboto}
 
 \newfontfamily\headernamefont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\headersocialfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  ItalicFont=*-Thin,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  ItalicFont=*-thinitalic,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\headeraddressfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  ItalicFont=*-ThinItalic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  ItalicFont=*-thinitalic,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\sectionheaderfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\sectionsubheaderfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\bodyfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
-  UprightFont=*-Thin,
-  BoldFont=*-Medium,
-  BoldItalicFont=*-MediumItalic,
+  UprightFont=*-thin,
+  BoldFont=*-medium,
+  BoldItalicFont=*-mediumitalic,
 ]{Roboto}
 
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 \newfontfamily\bodyfontletter[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-Bold,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]{Roboto}
 
 
@@ -275,7 +275,7 @@
 
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{text} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headersocialfont\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headersocialfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\headerfont\color{blue} #1}}
@@ -343,11 +343,11 @@
 
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
-\newcommand*{\mobile}[1]{\def\@mobile{#1}}
+\newcommand*{\mobile}[1]{\def\@mobile{  #1}}
 
 % Defines writer's email (optional)
 % Usage: \email{<email adress>}
-\newcommand*{\email}[1]{\def\@email{#1}}
+\newcommand*{\email}[1]{\def\@email{  #1}}
 
 % Defines writer's homepage (optional)
 % Usage: \homepage{<url>}
@@ -355,7 +355,7 @@
 
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
-\newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand*{\github}[1]{\def\@github{  #1}}
 
 % Defines writer's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
@@ -558,11 +558,11 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
   % \par\addvspace{1ex}
-  \par\addvspace{1.5ex}
+  \par\addvspace{0ex}
   \phantomsection{}
   \sectionstyle{#1}
   % \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{0ex}
+  \par\nobreak\addvspace{1ex}
 }
 
 % Define a subsection for CV
@@ -690,7 +690,7 @@
 \newenvironment{cvitems}{
   \vspace{-2mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=-3ex, nosep, noitemsep]
     \setlength{\parskip}{3pt}
     % \renewcommand{\labelitemi}{\bullet}
     \renewcommand{\labelitemi}{\scriptsize\color{blue}{$\circ$}}
