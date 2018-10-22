@@ -690,7 +690,7 @@
 \newenvironment{cvitems}{
   \vspace{-2mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=-3ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=-5ex, nosep, noitemsep]
     \setlength{\parskip}{3pt}
     % \renewcommand{\labelitemi}{\bullet}
     \renewcommand{\labelitemi}{\scriptsize\color{blue}{$\circ$}}
