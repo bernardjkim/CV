@@ -575,7 +575,7 @@
 
 % Define an environment for cventry
 \newenvironment{cventries}{
-  \vspace{2mm}
+  % \vspace{2mm}
   \begin{center}
 }{
   \end{center}
@@ -588,7 +588,7 @@
     \ifempty{#1#2#3#4}
       {\vspace{-2mm}
       \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.3cm} R{4.2cm}}
-        \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
+        \multicolumn{2}{p{\textwidth}}{\descriptionstyle{#5}} \\
       }
       {\ifempty{#2#3#5}
         {\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.3cm} R{4.2cm}}
@@ -601,7 +601,7 @@
           {\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.3cm} R{4.2cm}}
             \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
             \entrypositionstyle{#1} & \entrydatestyle{#4} \\
-            \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
+            \multicolumn{2}{p{\textwidth}}{\descriptionstyle{#5}} \\
           }
         }
       }
@@ -609,13 +609,13 @@
 }
 
 % Define an entry of cv information
-% Usage: \cventry{<title>}{<date>}{<description>}
+% Usage: \cvproject{<title>}{<date>}{<description>}
 \newcommand*{\cvproject}[3]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.3cm} R{4.2cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{13.3cm} R{4.2cm}}
     \skilltypestyle{#1} & \entrylocationstyle{#2} \\
-    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#3}} \\ 
+    \multicolumn{2}{p{\textwidth}}{\descriptionstyle{#3}} \\
   \end{tabular*}
 }
 
@@ -674,7 +674,7 @@
   \begin{justify}
 }{
   \end{justify}
-  \vspace{6mm}
+  % \vspace{1mm}
 }
 
 % Define a line of cv information(skill)
@@ -690,14 +690,15 @@
 \newenvironment{cvitems}{
   \vspace{-2mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=-5ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=2ex]
     \setlength{\parskip}{3pt}
+    \setlength\itemsep{-0.4em}
     % \renewcommand{\labelitemi}{\bullet}
     \renewcommand{\labelitemi}{\scriptsize\color{blue}{$\circ$}}
 }{
   \end{itemize}
   \end{justify}
-  \vspace{-2mm}
+  \vspace{-6mm}
 }
 
 
@@ -758,7 +759,7 @@
 % Create a tag
 % Usage: \cvtag{<tag label>}
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base, text=blue, fill=tag-gray, rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base, text=blue, fill=tag-gray, rounded corners=0.5ex,inner xsep=0.5ex,inner ysep =0.5ex,text height=1.2ex,text depth=0ex]{#1};
 }
 
 \renewcommand{\bullet}{\scriptsize\color{blue}{$\circ$}}
