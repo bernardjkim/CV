@@ -11,15 +11,35 @@
 
 %---------------------------------------------------------
   \cventry
-    {Web application for text/voice chat} % Description
+    {Platform for matching tutors/tutees} % Description
+    {Tutoro} % Project Title
+    {
+      \href{https://tutoro-uw.herokuapp.com}{Live Site} | 
+      \href{https://github.com/bernardjkim/tutoro}{Github}
+    } % Links
+    {Dec. 2018 - Jan. 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Integrated aws S3 to store images/files and a mongoDB to store user profiles.}
+        \item {Wrote unit tests with mocha/chai to test API endpoints.}
+        \item {Utilized Python's Scrapy framework to scrape course listings.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Discord clone, messaging web application} % Description
     {LOL Chat} % Project Title
-    {} % Location
+    {
+      \href{https://lol-chatt.herokuapp.com}{Live Site} | 
+      \href{https://github.com/bernardjkim/lol-chat}{Github}
+    } % Links
     {Nov. 2018 - Dec. 2018} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Built a simple chat server using \cvtag{Node.js} and Socket.io.}
-        \item {Implemented voice chat using WebRTC and deployed a coTURN docker image.}
-        % \item{\href{https://lol-chatt.herokuapp.com}{Link: \color{awesome-skyblue}https://lol-chatt.herokuapp.com}.}
+        \item {Built a simple chat server using Node.js and Socket.io for realtime communication.}
+        \item {Implemented voice chat using WebRTC allowing P2P audio communication.}
+        \item {Deployed a coTURN docker container to relay WebRTC media traffic.}
       \end{cvitems}
     }
 
@@ -27,14 +47,16 @@
   \cventry
     {Web application for trading stocks with a mock portfolio} % Description
     {PTrade} % Project Title
-    {} % Location
+    {
+      \href{https://p-trade.herokuapp.com}{Live Site} | 
+      \href{https://github.com/bernardjkim/ptrade}{Github}
+    } % Links
     {Jul. 2018 - Oct. 2018} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a RESTful API in \cvtag{Go} to handle user transactions stored in a \cvtag{MySQL} database.}
-        \item {Created scheduled tasks to pull the latest stock market prices and log user data for analytics.}
-        \item {Font-end built using \cvtag{React.js}}
-        % \item{\href{https://p-trade.herokuapp.com}{Link: \color{awesome-skyblue}https://p-trade.herokuapp.com}.}
+        \item {Developed a RESTful API in Go to handle user transactions stored in a MySQL database.}
+        \item {Created scheduled tasks to pull the latest stock market prices and log user data.}
+        \item {Font-end built using React.js and tested using Jest.js}
       \end{cvitems}
     }
 
@@ -46,26 +68,26 @@
     {Mar. 2018 - Jun. 2018} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item{Built a highly available, scalable, fault tolerant key-value store using \cvtag{Java}.}
+        \item{Built a highly available, scalable, fault tolerant key-value store using Java.}
         \item{Implemented at-most-once RPC semantics to prevent duplication.}
         \item{Implemented the multi-Paxos algorithm for state machine replication.}
         \item{Partitioned the key set to improve system throughput.}
       \end{cvitems}
     }
 
-%---------------------------------------------------------
-  \cventry
-    {Compiles MiniJava code into x86-64 assembly code} % Description
-    {MiniJava Compiler} % Project Title
-    {} % Location
-    {Mar. 2018 - Jun. 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Worked in a team of two to build a \href{http://www.cambridge.org/resources/052182060X/} {\color{awesome-skyblue}MiniJava} compiler using \cvtag{Java}. }
-        \item {Implemented the scanning and parsing phase utilizing JFlex/CUP java packages.}
-        \item {Implemented semantic checking and code generation using ASTs.}
-      \end{cvitems}
-    }
+% %---------------------------------------------------------
+%   \cventry
+%     {Compiles MiniJava code into x86-64 assembly code} % Description
+%     {MiniJava Compiler} % Project Title
+%     {} % Location
+%     {Mar. 2018 - Jun. 2018} % Date(s)
+%     {
+%       \begin{cvitems} % Description(s) of tasks/responsibilities
+%         \item {Worked in a team of two to build a \href{http://www.cambridge.org/resources/052182060X/} {\color{awesome-skyblue}MiniJava} compiler using Java. }
+%         \item {Implemented the scanning and parsing phase utilizing JFlex/CUP java packages.}
+%         \item {Implemented semantic checking and code generation using ASTs.}
+%       \end{cvitems}
+%     }
 
 %---------------------------------------------------------
   \cventry
@@ -75,8 +97,8 @@
     {Sep. 2017 - Dec. 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item{Implemented a handful of system calls.}
-        \item{Enabled the operating system to run multiple processes.}
+        \item{Implemented I/O system calls (open/close/read/write/...).}
+        \item{Enabled the operating system to run multiple processes with fork/exec.}
         \item{Added a relatively full-featured virtual memory system (LRU swapping, mmap, copy-on-write).}
       \end{cvitems}
     }
